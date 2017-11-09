@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Payments</h1>
+
+ <%= my_payments(@payments, current_user) %>
+<br>
+
+<%= link_to 'New Payment', new_payment_path %>
+

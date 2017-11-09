@@ -1,0 +1,41 @@
+<%= form_for(@apartment) do |f| %>
+  <% if @apartment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@apartment.errors.count, "error") %> prohibited this apartment from being saved:</h2>
+
+      <ul>
+      <% @apartment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :apartmentnumber %><br>
+    <%= f.text_field :apartmentnumber %>
+  </div>
+  <div class="field">
+    <%= f.label :apartmenttype %><br>
+    <!--<%= f.text_field :apartmenttype %>-->
+    <%= f.select :apartmenttype, %w{1_Bed 2_Bed 3_Bed Studio Townhouse }, :include_blank => false %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <!-- <%= f.text_field :status %> -->
+    <%= f.select :status, %w{Available Occupied}, :include_blank => false %>
+  </div>
+   <div class="field">
+    <%= f.label :property_id %>
+    <%= f.collection_select(:property_id, Property.all, :id, :propertyname) %>
+  </div>
+
+  <div class="field">
+    <!--<%= f.label :id%>-->
+    <%= f.label "Apartment"%>
+    <%= f.collection_select(:id, Tenant.all, :id, :firstname) %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

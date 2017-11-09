@@ -1,0 +1,31 @@
+# == Schema Information
+#
+# Table name: apartments
+#
+#  id              :integer          not null, primary key
+#  apartmentnumber :string
+#  apartmenttype   :string
+#  status          :string
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  property_id     :integer
+#
+
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  apartmentnumber: MyString
+  apartmenttype: MyString
+  status: MyString
+  leasestart: 2016-05-01
+  leaseend: 2016-05-01
+  rent: 1.5
+
+two:
+  apartmentnumber: MyString
+  apartmenttype: MyString
+  status: MyString
+  leasestart: 2016-05-01
+  leaseend: 2016-05-01
+  rent: 1.5

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Property Managers</h1>
+
+<table class='table'>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Identification</th>
+      <th>Dob</th>
+      <th>Sex</th>
+      <th>Address</th>
+      <th>Contact</th>
+      <th>Email</th>
+      <th>Description</th>
+      <th>Type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @property_managers.each do |property_manager| %>
+      <tr>
+        <td><%= property_manager.firstname %></td>
+        <td><%= property_manager.lastname %></td>
+        <td><%= property_manager.identification %></td>
+        <td><%= property_manager.dob %></td>
+        <td><%= property_manager.sex %></td>
+        <td><%= property_manager.address %></td>
+        <td><%= property_manager.contact %></td>
+        <td><%= property_manager.email %></td>
+        <td><%= property_manager.description %></td>
+        <td><%= property_manager.type %></td>
+        <td><%= link_to 'Show', property_manager %></td>
+        <td><%= link_to 'Edit', edit_property_manager_path(property_manager) %></td>
+        <td><%= link_to 'Destroy', property_manager, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Property manager', new_property_manager_path %>

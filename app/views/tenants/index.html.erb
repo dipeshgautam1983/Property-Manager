@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tenants</h1>
+
+<table class='table'>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>ID#</th>
+      <th>Address</th>
+      <th>Contact</th>
+      <th>Email</th>
+      <th>Type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tenants.each do |tenant| %>
+      <% if current_user.email == tenant.email or current_user.type == 'PropertyManager' %>
+      <tr>
+        <td><%= tenant %></td>
+        <td><%= tenant.identification %></td>
+        <td><%= tenant.address %></td>
+        <td><%= tenant.contact %></td>
+        <td><%= tenant.email %></td>
+        <td><%= tenant.type %></td>
+        <td><%= link_to 'Show', tenant %></td>
+        <td><%= link_to 'Edit', edit_tenant_path(tenant) %></td>
+        <td><%= link_to 'Destroy', tenant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
+      </tr>
+      <% else %>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        
+      </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+
+<br>
+
+<%= link_to 'New Tenant', new_tenant_path %>

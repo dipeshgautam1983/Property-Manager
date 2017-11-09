@@ -1,0 +1,34 @@
+<div>
+  <% if current_user %>
+    <p> Hello <%= link_to current_user.firstname, session_home  %>!</p>
+    <P>
+      <%= link_to 'Profile', current_user %>
+
+    </p>
+  <% end %>
+  <% if current_user && current_user.type == admin %>
+    <p><%= link_to 'View tenants', tenants_path  %></p>
+    <p><%= link_to 'View agents', agents_path  %></p>
+    <p><%= link_to 'View tickets', tickets_path  %></p>
+    <p><%= link_to 'Issue ticket', new_ticket_path  %></p>
+    <p><%= link_to 'View Properties', properties_path  %></p>
+    
+    <p><%= link_to 'View apartments', apartments_path %></p>
+
+    <p><%= link_to 'Create user', new_system_user_path  %></p>
+    <!--<p><%= link_to 'Create manager', new_property_manager_path  %></p>-->
+    
+    <p><%= link_to 'View appointments', appointments_path  %></p>
+    
+  <% elsif current_user && current_user.type == maintenance %>
+
+    <p><%= link_to 'View tickets', tickets_path  %></p>
+
+  <% elsif current_user && current_user.type == resident%>
+    <p><%= link_to 'Issue ticket', new_ticket_path  %></p>
+    <p><%= link_to 'View payments', payments_path  %></p>
+    <p><%= link_to 'View tickets', tickets_path  %></p>
+
+  <%else %>
+  <% end %>
+</div>

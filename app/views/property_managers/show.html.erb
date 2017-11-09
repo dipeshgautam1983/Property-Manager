@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @property_manager.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @property_manager.lastname %>
+</p>
+
+<p>
+  <strong>Identification:</strong>
+  <%= @property_manager.identification %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @property_manager.dob %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @property_manager.sex %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @property_manager.address %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @property_manager.contact %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @property_manager.email %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @property_manager.description %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @property_manager.type %>
+</p>
+
+
+<%= link_to 'Edit', edit_property_manager_path(@property_manager) %> |
+<%= link_to 'Back', property_managers_path %>

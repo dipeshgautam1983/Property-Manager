@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @agent.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @agent.lastname %>
+</p>
+
+<p>
+  <strong>Identification:</strong>
+  <%= @agent.identification %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @agent.dob %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @agent.sex %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @agent.address %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @agent.contact %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @agent.email %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @agent.description %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @agent.type %>
+</p>
+
+
+<h1>Listing Tickets</h1>
+
+
+<%= my_tickets(@agent.tickets, @agent ) %>
+
+<br>
+
+<%= link_to 'New Ticket', new_ticket_path %>
+
+
+<%= link_to 'Edit', edit_agent_path(@agent) %> |
+<%= link_to 'Back', agents_path %>

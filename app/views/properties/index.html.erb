@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Properties</h1>
+
+<table class='table'>
+  <thead>
+    <tr>
+      <th>Propertyname</th>
+      <th>Propertyaddress</th>
+      <th>Propertyowner</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @properties.each do |property| %>
+      <tr>
+        <td><%= property.propertyname %></td>
+        <td><%= property.propertyaddress %></td>
+        <td><%= property.propertyowner %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

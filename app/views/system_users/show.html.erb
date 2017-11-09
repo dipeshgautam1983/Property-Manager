@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @system_user.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @system_user.lastname %>
+</p>
+
+<p>
+  <strong>Identification:</strong>
+  <%= @system_user.identification %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @system_user.dob %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @system_user.sex %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @system_user.address %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @system_user.contact %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @system_user.email %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @system_user.description %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @system_user.type %>
+</p>
+
+<%= link_to 'Edit', edit_system_user_path(@system_user) %> |
+<%= link_to 'Back', system_users_path %>

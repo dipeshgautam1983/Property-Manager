@@ -1,0 +1,27 @@
+# == Schema Information
+#
+# Table name: tickets
+#
+#  id                 :integer          not null, primary key
+#  description        :string
+#  status             :string
+#  agentcomment       :string
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#  agent_id           :integer
+#  tenant_id          :integer
+#  PropertyManager_id :integer
+#
+
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: "This is a test to see if the number of characters for the ticket description are still recognized properly even if the maximum length of two hundred and fifty characters has been exceeded. If, by any chance the maximum length of two hundred and fifty characters has been exceeded, the system should completely and utterly reject the description."
+  status: Unfinished
+  agentcomment: MyString
+
+two:
+  description: "This is a test to see if the number of characters for the ticket description are still recognized properly even if the maximum length of two hundred and fifty characters has been exceeded. If, by any chance the maximum length of two hundred and fifty characters has been exceeded, the system should completely and utterly reject the description."
+  status: Unfinished
+  agentcomment: MyString

@@ -1,0 +1,49 @@
+# == Schema Information
+#
+# Table name: system_users
+#
+#  id              :integer          not null, primary key
+#  firstname       :string
+#  lastname        :string
+#  identification  :string
+#  dob             :date
+#  sex             :string
+#  address         :string
+#  contact         :string
+#  email           :string
+#  password_digest :string
+#  description     :string
+#  type            :string
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+manager:
+  firstname: myfname
+  lastname: mylname
+  identification: MyString
+  dob: 2016-04-12
+  sex: MyString
+  address: MyString
+  contact: MyString
+  email: MyString
+  description: MyString
+  password_digest: <%= BCrypt::Password.create('secret') %>
+  type: "PropertyManager"
+
+
+tenant:
+  firstname: MyString
+  lastname: MyString
+  identification: MyString
+  dob: 2016-04-12
+  sex: MyString
+  address: MyString
+  contact: MyString
+  email: MyString
+  password_digest: <%= BCrypt::Password.create('secret') %>
+  description: MyString
+  type: "Tenant"

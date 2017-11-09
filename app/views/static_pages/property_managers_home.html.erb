@@ -1,0 +1,99 @@
+<h1>Manager Home</h1>
+<div class="row">
+    <div class="col-lg-4">
+        <div class="panel panel-success">
+
+            <div class="panel-heading">Properties</div>
+
+            <div class="panel-body">
+                <p>By clicking the link, you can view and edit the properties</p>
+            </div>
+            <div class="panel-footer">
+                <%= link_to 'More', properties_path  %>
+            </div>
+        </div>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+        <div class="panel panel-success">
+            <div class="panel-heading">Tenants</div>
+
+            <div class="panel-body">
+                <p>By clicking the link, you can view and edit the tenants</p>
+            </div>
+            <div class="panel-footer">
+                <%= link_to 'More', tenants_path  %>
+            </div>
+        </div>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+        <div class="panel panel-success">
+            <div class="panel-heading">Agents</div>
+            <div class="panel-body">
+                <p>By clicking the link, you can view and edit the agents</p>
+            </div>
+            <div class="panel-footer">
+                <%= link_to 'More', agents_path  %>
+            </div>
+        </div>
+    </div>
+    <!-- /.col-lg-4 -->
+</div>
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="panel panel-success">
+            <div class="panel-heading">View profile</div>
+            <div class="panel-body">
+                <p>By clicking the link, you can view and edit the property managers</p>
+            </div>
+            <div class="panel-footer">
+                <%= link_to 'More', current_user  %>
+            </div>
+        </div>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+        <div class="panel panel-success">
+            <div class="panel-heading">Create new:</div>
+            <div class="panel-body">
+                <p><%= link_to 'Property manager', new_property_manager_path  %></p>
+                <p><%= link_to 'Tenant', new_tenant_path  %></p>
+                <p><%= link_to 'Agent', new_agent_path  %></p>
+            </div>
+            <div class="panel-footer">
+                
+            </div>
+        </div>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+        <div class="panel panel-success">
+            <div class="panel-heading">View tickets</div>
+
+            <div class="panel-body">
+                <p>By clicking the link, you can view and edit the tickets</p>
+            </div>
+            <div class="panel-footer">
+                <%= link_to 'Click here', tickets_path  %>
+            </div>
+        </div>
+    </div>
+    <!-- /.col-lg-4 -->
+</div>
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="panel panel-success">
+            <div class="panel-heading">View Requested Appointments</div>
+            <div class="panel-body">
+                <p>By clicking the link, you can view and edit the appointments</p>
+            </div>
+            <div class="panel-footer">
+                <%= link_to 'View', appointments_path  %>
+            </div>
+        </div>
+    </div>
+    <!-- /.col-lg-4 -->
+</div>

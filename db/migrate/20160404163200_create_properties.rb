@@ -1,0 +1,11 @@
+class CreateProperties < ActiveRecord::Migration
+  def change
+    create_table :properties do |t|
+      t.string :propertyname
+      t.string :propertyaddress
+      t.string :propertyowner
+
+      t.timestamps null: false
+    end
+  end
+end

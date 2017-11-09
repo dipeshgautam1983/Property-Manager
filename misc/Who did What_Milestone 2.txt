@@ -1,0 +1,20 @@
+Ahmed:
+
+	*Created Appointment module and integrated in the app
+	*created Demo Video (He will upload and provide link )
+
+Dipesh:
+	*acted as team co-ordinator as well as git-repo manager through the process
+	*operated booth in Demo 2 
+	*worked on Ticke Module for Admin, Tenant and Agent (maintenance staff)
+	*User login and authentication is complete with right views and navigations for right user type
+	*Overall navigations were finally reviewed by Dipesh
+
+Girish:
+	* Validated and cleaned navigation of Property module.
+	* checked potential issues in the system (Q&A)
+
+Kumar:
+	*validated Payment and Apartment models
+	*created association and navigation for Payments and apartments
+

@@ -1,0 +1,25 @@
+# == Schema Information
+#
+# Table name: properties
+#
+#  id                 :integer          not null, primary key
+#  propertyname       :string
+#  propertyaddress    :string
+#  propertyowner      :string
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#  PropertyManager_id :integer
+#
+
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  propertyname: This is a test to see if the number of characters for the property name are still recognized properly even if the maximum length of two hundred and fifty characters has been exceeded. If by any chance the maximum length of two hundred and fifty characters has been exceeded the system should completely and utterly reject the property name.
+  propertyaddress: his is a test to see if the number of characters for the property address are still recognized properly even if the maximum length of two hundred and fifty characters has been exceeded. If by any chance the maximum length of two hundred and fifty characters has been exceeded the system should completely and utterly reject the property address.
+  propertyowner: This is a test to see if the number of characters for the property owner name are still recognized properly even if the maximum length of two hundred and fifty characters has been exceeded. If by any chance the maximum length of two hundred and fifty characters has been exceeded the system should completely and utterly reject the property name.
+
+two:
+  propertyname: This is a test to see if the number of characters for the property name are still recognized properly even if the maximum length of two hundred and fifty characters has been exceeded. If by any chance the maximum length of two hundred and fifty characters has been exceeded the system should completely and utterly reject the property name.
+  propertyaddress: his is a test to see if the number of characters for the property address are still recognized properly even if the maximum length of two hundred and fifty characters has been exceeded. If by any chance the maximum length of two hundred and fifty characters has been exceeded the system should completely and utterly reject the property address.
+  propertyowner: This is a test to see if the number of characters for the property owner name are still recognized properly even if the maximum length of two hundred and fifty characters has been exceeded. If by any chance the maximum length of two hundred and fifty characters has been exceeded the system should completely and utterly reject the property name.

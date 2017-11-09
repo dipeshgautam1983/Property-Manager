@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>ADGK-Property</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+
+		<%= render 'static_pages/top_navbar' %>
+		<div class="container-fluid text-center">    
+	  		<div class="row content">
+		    	<div class="col-sm-2 sidenav">
+		    	<div class="navbar-default sidebar" role="navigation">
+		      		<%= render 'static_pages/left_navbar' %>
+		      	</div>
+	    		</div>
+    		<div class="col-sm-8 text-left"> 
+      			<%= yield %>
+			</div>
+			<div class="col-sm-2 sidenav">
+		      <%= render 'static_pages/right_navbar' %>
+    		</div>
+  		</div>
+	</body>
+</html>
